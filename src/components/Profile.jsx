@@ -24,7 +24,7 @@ export default function Profile() {
   }, []);
 
   return (
-    <div>
+    <div className="text-xl my-40 h-full p-4">
       <p>
         Connected account: {accounts.length > 0 ? accounts[0] : "Not connected"}
       </p>
