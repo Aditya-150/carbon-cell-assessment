@@ -17,7 +17,11 @@ function Home() {
 
 const tabList = [
   { title: "Home", icon: <FiHome size={20} />, content: <Home /> },
-  { title: "Chart", icon: <FiTrello size={20} />, content: <PopulationChart /> },
+  {
+    title: "Chart",
+    icon: <FiTrello size={20} />,
+    content: <PopulationChart />,
+  },
   { title: "Prices", icon: <FiTrendingUp size={20} />, content: <Prices /> },
   { title: "Profile", icon: <FiUser size={20} />, content: <Profile /> },
 ];
@@ -34,8 +38,8 @@ export default function SideNavbar() {
         <FaBarsStaggered size={20} />
       </button>
       <div
-        className={`h-screen p-4 bg-zinc-800 fixed top-0 left-0 z-40 flex flex-col ${
-          sidebarOpen ? "" : "hidden"
+        className={`h-screen p-4 bg-zinc-800 fixed top-0 left-0 z-40 flex flex-col sidebar transition duration-300 ease-in-out ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="flex flex-row items-center gap-8 mb-12">
@@ -61,7 +65,7 @@ export default function SideNavbar() {
         {tabList.slice(3).map((tab, index) => (
           <div
             key={index}
-            className="group flex flex-row items-center mt-auto gap-4 text-zinc-100 cursor-pointer pl-4 pr-auto py-2 bg-zinc-600 rounded-lg"
+            className="group flex flex-row items-center mt-auto gap-4 text-zinc-100 cursor-pointer pl-4 pr-auto py-2 bg-zinc-600 hover:bg-zinc-500 transition- rounded-lg"
             onClick={() => setActiveTab(3)}
           >
             {tab.icon}

@@ -31,7 +31,7 @@ export default function ConnectWallet() {
     <div>
       <button
         onClick={() => connectToWallet()}
-        className="p-2 fixed top-4 right-4 hover:opacity-80 bg-green-500 rounded-lg text-base font-semibold"
+        className="p-2 fixed top-4 right-4 transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 rounded-lg text-base font-semibold"
       >
         Connect Wallet
       </button>

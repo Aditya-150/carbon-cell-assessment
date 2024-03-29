@@ -56,7 +56,7 @@ export default function Prices() {
                   className="flex flex-col items-start justify-between p-2 bg-zinc-700 rounded-md"
                   title={cryptoData.bpi[currency].description}
                 >
-                  <div className="flex flex-row justify-between w-full">
+                  <div className="flex flex-row justify-between w-full mb-2">
                     <h3 className="font-bold text-green-500">{currency}</h3>
                     {currencyIcon && currencyIcon.svg}
                   </div>
