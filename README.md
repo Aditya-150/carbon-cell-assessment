@@ -33,6 +33,6 @@ Rather than dividing the tasks into separate projects, I chose to represent all 
 - [HeadlessUI](https://headlessui.com/)
 
 ## ✨My Experience
-I had quit fun working on it. Learnt a lot of new stuff.
+I had quite fun working on it. Learnt a lot of new stuff.
 
 *Thanks:)*
